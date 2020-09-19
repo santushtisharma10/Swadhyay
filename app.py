@@ -19,7 +19,7 @@ def sendmail(name, reas):
     obj.login("sharmasantushti1012", "***********")
 
     subject = "Sending email via python script"
-    body = "Hi " + name +" I am sending this email using python script. I am sending it because "+reas
+    body = "Hi " + name +" I am sending this email using python script. I am sending it because " + reas
     
     message = "Subject: {}\n\n{}".format(subject, body)
 
@@ -35,7 +35,7 @@ def sendmail(name, reas):
 def textdet(name) :
     
     img = cv2.imread(name)
-#img = cv2.resize(img, (1180, 780))
+    #img = cv2.resize(img, (1180, 780))
 
     #cv2.waitKey(0)
     img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
