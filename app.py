@@ -16,7 +16,7 @@ def sendmail(name, reas):
 
     obj.starttls()
 
-    obj.login("sharmasantushti1012", "aryan@130614")
+    obj.login("sharmasantushti1012", "***********")
 
     subject = "Sending email via python script"
     body = "Hi " + name +" I am sending this email using python script. I am sending it because "+reas
@@ -81,7 +81,7 @@ def nxt():
     if request.method == 'POST':
         name = request.files['file']
         #text = textdet(name)
-        name.save(os.path.join("C:/Users/Hp/Desktop/Santushti/Eduthon/Flask",name.filename))
+        name.save(os.path.join("C:/Users/DELL/Desktop/SWADHYAY",name.filename))
         text = textdet(name.filename)
         lis = srch(text)
         print(lis)
