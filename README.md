@@ -1,1 +1,1 @@
-# Swadhyay
+# svadhyaya
