@@ -2,30 +2,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <!-- <link rel="icon" href="data:;base64,iVBORw0KGgo="> -->
 <link rel="stylesheet" href=" {{ url_for('static', filename='css/3.css')}}" /> {% endblock %}
-<style>
-    a:link,
-    a:visited {
-        background-color: #f44336;
-        color: white;
-        padding: 14px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-    }
-    
-    a:hover,
-    a:active {
-        background-color: red;
-    }
-</style>{% block box%}
+{% block box%}
 <div class="container">
     <br>
     <br><br>
     <br>
     <br>
     <h1>
-        😊 Pikachu will help you solve our query 😊
+        Scan and Search
     </h1>
+    <br>
+    <h4 style="color: azure;">A service which enables to find the relevant content for the items that you search and simplifies your life!</h4>
+    <br>
+    <br>
 </div>
 <div class="container">
     <form action="http://127.0.0.1:5000/3" method="POST" enctype="multipart/form-data">
@@ -44,14 +33,19 @@
 </div>
 <br> {% if lis %}
 
+{% for index in lis %}
 <div class="container">
     <!--img src="img_avatar.png" alt="Avatar" style="width:100%"-->
-    <div>
-        {% for index in lis %}
-        <a href="{{index}}">Link</a>
-        <br> {% endfor %}
+    <div class="card"> 
+        
+      
+        <a href="{{index}}"><h1 style="color: black;">Link</h1></a>
+        
+        
     </div>
+<br>
 
 </div>
+{% endfor %}
 <br>
 <br> {% endif %} {% endblock%}
