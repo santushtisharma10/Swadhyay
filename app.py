@@ -75,13 +75,17 @@ def pg():
     else :
         return render_template("2.html")
 
+@app.route("/4")
+def board():
+    return render_template("whiteboard.html")
+
 @app.route("/3", methods = ['POST', 'GET'])
 def nxt():
     lis = []
     if request.method == 'POST':
         name = request.files['file']
         #text = textdet(name)
-        name.save(os.path.join("C:/Users/DELL/Desktop/SWADHYAY",name.filename))
+        name.save(os.path.join("C:/Users/Hp/SWADHYAY",name.filename))
         text = textdet(name.filename)
         lis = srch(text)
         print(lis)
