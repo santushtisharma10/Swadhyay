@@ -9,8 +9,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="{{url_for('static',filename ='assets/img/favicon.png')}}" rel="icon" />
+    <link href="{{url_for('static',filename ='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -20,21 +20,21 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="{{url_for('static',filename ='../static/assets/vendor/bootstrap/css/bootstrap.min.css')}}"
       rel="stylesheet"
     />
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="{{url_for('static',filename ='assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static',filename ='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static',filename ='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static',filename ='assets/vendor/venobox/venobox.css')}}" rel="stylesheet" />
     <link
-      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      href="{{url_for('static',filename ='assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="{{url_for('static',filename = 'assets/vendor/aos/aos.css')}}" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{{url_for('static',filename='assets/css/style.css')}}" rel="stylesheet" />
 
     <!-- =======================================================
   * Template Name: Swadhyay! - v2.2.0
@@ -48,7 +48,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <h1 class="logo mr-auto"><a href="index.html">Swadhyay!</a></h1>
+        <h1 class="logo mr-auto"><a href="./">Swadhyay!</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
