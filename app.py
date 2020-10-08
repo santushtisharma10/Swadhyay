@@ -77,7 +77,7 @@ def pg():
 
 @app.route("/4")
 def board():
-    return render_template("whiteboard.html")
+    return redirect("https://awwapp.com/")
 
 @app.route("/3", methods = ['POST', 'GET'])
 def nxt():
